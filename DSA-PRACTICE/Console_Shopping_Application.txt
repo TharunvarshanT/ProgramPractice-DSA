@@ -1,0 +1,364 @@
+#include <stdio.h>
+int main()
+{
+    int total_price = 0;
+    int choice, brand, model, qty;
+    int price = 0;
+    int cont = 1;
+    printf("=================================\n");
+    printf("   Welcome to Online Shopping\n");
+    printf("=================================\n");
+    while(cont == 1)
+    {
+        printf("\nChoose a Category:\n");
+        printf("1. Mobiles\n");
+        printf("2. Watches\n");
+        printf("3. Laptops\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+        switch(choice)
+        {
+            case 1:
+                printf("\nMobile Brands:\n");
+                printf("1. Samsung\n");
+                printf("2. Apple\n");
+                printf("3. Vivo\n");
+                printf("4. Oppo\n");
+                printf("5. Xiaomi\n");
+                printf("Select Brand: ");
+                scanf("%d", &brand);
+                switch(brand)
+                {
+                    case 1:
+                        printf("\nSamsung Models:\n");
+                        printf("1. Galaxy S26 - ₹80000\n");
+                        printf("2. Galaxy S26 Pro - ₹120000\n");
+                        printf("3. Galaxy S26 Ultra - ₹150000\n");
+                        printf("Select Model: ");
+                        scanf("%d", &model);
+
+                        if(model == 1) price = 80000;
+                        else if(model == 2) price = 120000;
+                        else if(model == 3) price = 150000;
+                        else
+                        {
+                            printf("Invalid Model!\n");
+                            continue;
+                        }
+                        break;
+                    case 2:
+                        printf("\nApple Models:\n");
+                        printf("1. iPhone 17 - ₹80000\n");
+                        printf("2. iPhone 17 Pro - ₹120000\n");
+                        printf("3. iPhone 17 Pro Max - ₹150000\n");
+                        printf("Select Model: ");
+                        scanf("%d", &model);
+
+                        if(model == 1) price = 80000;
+                        else if(model == 2) price = 120000;
+                        else if(model == 3) price = 150000;
+                        else
+                        {
+                            printf("Invalid Model!\n");
+                            continue;
+                        }
+                        break;
+                    case 3:
+                        printf("\nVivo Models:\n");
+                        printf("1. X300 - ₹80000\n");
+                        printf("2. X300 Pro - ₹120000\n");
+                        printf("3. X300 Ultra - ₹150000\n");
+                        printf("Select Model: ");
+                        scanf("%d", &model);
+
+                        if(model == 1) price = 80000;
+                        else if(model == 2) price = 120000;
+                        else if(model == 3) price = 150000;
+                        else
+                        {
+                            printf("Invalid Model!\n");
+                            continue;
+                        }
+                        break;
+                    case 4:
+                        printf("\nOppo Models:\n");
+                        printf("1. Find X9 - ₹80000\n");
+                        printf("2. Find X9 Pro - ₹120000\n");
+                        printf("3. Find X9 Ultra - ₹150000\n");
+                        printf("Select Model: ");
+                        scanf("%d", &model);
+
+                        if(model == 1) price = 80000;
+                        else if(model == 2) price = 120000;
+                        else if(model == 3) price = 150000;
+                        else
+                        {
+                            printf("Invalid Model!\n");
+                            continue;
+                        }
+                        break;
+                    case 5:
+                        printf("\nXiaomi Models:\n");
+                        printf("1. Xiaomi 17 - ₹80000\n");
+                        printf("2. Xiaomi 17 Pro - ₹120000\n");
+                        printf("3. Xiaomi 17 Ultra - ₹150000\n");
+                        printf("Select Model: ");
+                        scanf("%d", &model);
+
+                        if(model == 1) price = 80000;
+                        else if(model == 2) price = 120000;
+                        else if(model == 3) price = 150000;
+                        else
+                        {
+                            printf("Invalid Model!\n");
+                            continue;
+                        }
+                        break;
+                    default:
+                        printf("Invalid Brand!\n");
+                        continue;
+                }
+                break;
+            case 2:
+                printf("\nWatch Brands:\n");
+                printf("1. Rolex\n");
+                printf("2. Titan\n");
+                printf("3. Fastrack\n");
+                printf("4. Sonata\n");
+                printf("5. Casio\n");
+                printf("Select Brand: ");
+                scanf("%d", &brand);
+                switch(brand)
+                {
+                    case 1:
+                        printf("\nRolex Models:\n");
+                        printf("1. Daytona - ₹500000\n");
+                        printf("2. Land-Dweller - ₹600000\n");
+                        printf("3. Yacht-Master - ₹700000\n");
+                        printf("Select Model: ");
+                        scanf("%d", &model);
+                        if(model == 1) price = 500000;
+                        else if(model == 2) price = 600000;
+                        else if(model == 3) price = 700000;
+                        else
+                        {
+                            printf("Invalid Model!\n");
+                            continue;
+                        }
+                        break;
+                    case 2:
+                        printf("\nTitan Models:\n");
+                        printf("1. Stellar - ₹10000\n");
+                        printf("2. Edge - ₹15000\n");
+                        printf("3. Nebula - ₹20000\n");
+                        printf("Select Model: ");
+                        scanf("%d", &model);
+
+                        if(model == 1) price = 10000;
+                        else if(model == 2) price = 15000;
+                        else if(model == 3) price = 20000;
+                        else
+                        {
+                            printf("Invalid Model!\n");
+                            continue;
+                        }
+                        break;
+                    case 3:
+                        printf("\nFastrack Models:\n");
+                        printf("1. UFO - ₹3000\n");
+                        printf("2. Overdrive - ₹4000\n");
+                        printf("3. Exuberant - ₹5000\n");
+                        printf("Select Model: ");
+                        scanf("%d", &model);
+                        if(model == 1) price = 3000;
+                        else if(model == 2) price = 4000;
+                        else if(model == 3) price = 5000;
+                        else
+                        {
+                            printf("Invalid Model!\n");
+                            continue;
+                        }
+                        break;
+                    case 4:
+                        printf("\nSonata Models:\n");
+                        printf("1. Hexa - ₹2000\n");
+                        printf("2. Chronos - ₹2500\n");
+                        printf("3. Unveil - ₹3000\n");
+                        printf("Select Model: ");
+                        scanf("%d", &model);
+                        if(model == 1) price = 2000;
+                        else if(model == 2) price = 2500;
+                        else if(model == 3) price = 3000;
+                        else
+                        {
+                            printf("Invalid Model!\n");
+                            continue;
+                        }
+                        break;
+                    case 5:
+                        printf("\nCasio Models:\n");
+                        printf("1. Edifice - ₹10000\n");
+                        printf("2. Vintage Digital - ₹5000\n");
+                        printf("3. G-Shock - ₹12000\n");
+                        printf("Select Model: ");
+                        scanf("%d", &model);
+                        if(model == 1) price = 10000;
+                        else if(model == 2) price = 5000;
+                        else if(model == 3) price = 12000;
+                        else
+                        {
+                            printf("Invalid Model!\n");
+                            continue;
+                        }
+                        break;
+                    default:
+                        printf("Invalid Brand!\n");
+                        continue;
+                }
+                break;
+
+            case 3:
+                printf("\nLaptop Brands:\n");
+                printf("1. Samsung\n");
+                printf("2. Apple\n");
+                printf("3. Dell\n");
+                printf("4. Lenovo\n");
+                printf("5. Asus\n");
+                printf("Select Brand: ");
+                scanf("%d", &brand);
+
+                switch(brand)
+                {
+                    case 1:
+                        printf("\nSamsung Laptops:\n");
+                        printf("1. Book 6 - ₹80000\n");
+                        printf("2. Book 6 Pro - ₹120000\n");
+                        printf("3. Book 6 Ultra - ₹150000\n");
+                        scanf("%d", &model);
+
+                        if(model == 1) price = 80000;
+                        else if(model == 2) price = 120000;
+                        else if(model == 3) price = 150000;
+                        else continue;
+                        break;
+                    case 2:
+                        printf("\nApple Laptops:\n");
+                        printf("1. MacBook Pro M5 16\" - ₹250000\n");
+                        printf("2. MacBook Pro M5 14\" - ₹220000\n");
+                        printf("3. MacBook Air M5 - ₹150000\n");
+                        scanf("%d", &model);
+
+                        if(model == 1) price = 250000;
+                        else if(model == 2) price = 220000;
+                        else if(model == 3) price = 150000;
+                        else continue;
+                        break;
+                    case 3:
+                        printf("\nDell Laptops:\n");
+                        printf("1. XPS - ₹100000\n");
+                        printf("2. Latitude - ₹90000\n");
+                        printf("3. Alienware - ₹180000\n");
+                        scanf("%d", &model);
+                        if(model == 1) price = 100000;
+                        else if(model == 2) price = 90000;
+                        else if(model == 3) price = 180000;
+                        else continue;
+                        break;
+                    case 4:
+                        printf("\nLenovo Laptops:\n");
+                        printf("1. ThinkPad - ₹85000\n");
+                        printf("2. Yoga - ₹95000\n");
+                        printf("3. Legion - ₹140000\n");
+                        scanf("%d", &model);
+                        if(model == 1) price = 85000;
+                        else if(model == 2) price = 95000;
+                        else if(model == 3) price = 140000;
+                        else continue;
+                        break;
+                    case 5:
+                        printf("\nAsus Laptops:\n");
+                        printf("1. ROG - ₹160000\n");
+                        printf("2. ZenBook - ₹90000\n");
+                        printf("3. VivoBook - ₹70000\n");
+                        scanf("%d", &model);
+                        if(model == 1) price = 160000;
+                        else if(model == 2) price = 90000;
+                        else if(model == 3) price = 70000;
+                        else continue;
+                        break;
+
+                    default:
+                        printf("Invalid Brand!\n");
+                        continue;
+                }
+                break;
+            default:
+                printf("Invalid Category!\n");
+                continue;
+        }
+        while(1)
+        {
+            printf("Enter Quantity: ");
+            if(scanf("%d", &qty) != 1)
+            {
+                printf("Invalid input. Please enter a number.\n");
+
+                while(getchar() != '\n');
+                continue;
+            }
+            if(qty <= 0)
+            {
+                printf("Warning: Quantity cannot be 0 or negative.\n");
+                continue;
+            }
+            break;
+        }
+        int subtotal = price * qty;
+        total_price += subtotal;
+        printf("Subtotal: ₹%d\n", subtotal);
+        printf("Current Cart Total: ₹%d\n", total_price);
+        printf("\nDo you want to continue shopping?\n");
+        printf("1. Yes\n");
+        printf("2. No\n");
+        scanf("%d", &cont);
+    }
+
+    int confirm;
+    printf("\n=================================\n");
+    printf("Total Amount = ₹%d\n", total_price);
+    printf("=================================\n");
+    printf("Confirm Order?\n");
+    printf("1. Yes\n");
+    printf("2. No\n");
+    scanf("%d", &confirm);
+    if(confirm == 2)
+    {
+        printf("Order Cancelled.\n");
+        return 0;
+    }
+    int payment;
+    printf("\nSelect Payment Method:\n");
+    printf("1. Online Payment\n");
+    printf("2. Cash on Delivery\n");
+    printf("Enter Choice: ");
+    scanf("%d", &payment);
+    if(payment == 1)
+    {
+        printf("\nTotal Amount: ₹%d\n", total_price);
+        printf("Payment Request Sent...\n");
+        printf("Payment Successful!\n");
+    }
+    else if(payment == 2)
+    {
+        printf("\nTotal Amount: ₹%d\n", total_price);
+        printf("Pay at the time of delivery.\n");
+    }
+    else
+    {
+        printf("Invalid Payment Method.\n");
+        return 0;
+    }
+    printf("\nThank You For Shopping!\n");
+    printf("Your Order Has Been Confirmed.\n");
+    return 0;
+}
